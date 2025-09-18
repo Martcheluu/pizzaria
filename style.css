@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* Navegador do site */
+.navegador {
+  font-family: sans-serif;
+  background-color: #252424;
+  height: 5;
+  padding: 1vh;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navegador a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+ /*Capa do site e texto  */
+
+.containerhead {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  color: white;
+  margin-bottom: 5vh;
+}
+
+.containerhead h1 {
+  font-weight: 100;
+  font-size: clamp(2rem, 3vw, 4rem);
+  font-family: "Inconsolata";
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.containerhead h2 {
+  margin-top: 10px;
+  font-size: clamp(1rem,1.5vw,1.5rem);
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+.containerhead img {
+  width: 100%;
+  object-fit: cover;
+  height: 70vh;
+  position: absolute;
+  z-index: -1;
+  object-position: 0 -8rem;
+}
+
+@media screen and (max-width: 1500px) {
+
+  .containerhead img {
+    width: 100%;
+    object-fit: cover;
+    height: 70vh;
+    position: absolute;
+    z-index: -1;
+    object-position: 0 2rem;
+  }
+}
+
+.textohead {
+  text-align: center;
+  position: relative;
+  top: 10vh;
+}
+
+.botaocardapio {
+  text-align: center;
+  position: relative;
+  top: 14vh;
+}
+
+
+@media screen and (max-width:1500px) {
+  .textohead {
+    top: 7vh;
+  }
+  .botaocardapio {
+    top: 11vh;
+  }
+}
+
+.botaocardapio a {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  background-color: orange;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.759);
+  font-weight: 600;
+}
+
+/* Cardapio e itens */
+
+.cardapio {
+  width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+  margin-bottom: 10vh;
+  font-family: sans-serif;
+}
+
+.cardapio h2 {
+  text-align: center;
+  font-size: clamp(1.5rem,2vw,2.5rem);
+}
+
+.cardapiotxt {
+  margin-bottom: 5vh;
+}
+
+.itenscardapio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.pizza {
+  /* Foi aqui que fez ficar responsivel o site */
+  flex: 1 1 20vw;
+  height: 40vh;
+  max-width: 20vw;
+  min-width: 250px;
+  text-align: center;
+  background-color: #eaeaeab3;
+  border-radius: 1rem;
+}
+
+.pizza img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2vh;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.pizza p {
+  text-align: left;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+
+/* parte do sobre nós */
+
+.sobre {
+  font-family: "Inconsolata";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  margin-bottom: 10vh;
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.1),#000);
+}
+
+.sobre img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.sobre h1{
+  margin-bottom: 5vh;
+  font-size: clamp(1.5rem,2vw, 3rem);
+}
+
+
+/* Contato */
+
+.contato {
+  text-align: center;
+  margin-bottom: 8vh;
+  font-family: sans-serif;
+}
+
+.contato h1 {
+  margin-bottom: 2vh;
+}
+
+.contato p {
+  margin-bottom: 5vh;
+}
+
+.itenscontato {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  text-align: left;
+}
+
+.telmail {
+  display: flex;
+  flex-direction: column;
+}
+
+.telmail a {
+  color:#ffa200;
+}
+
+.linkwpp {
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+  padding: 0.7rem 1rem;
+  border: 1px solid black;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border-radius: 1rem;
+  background-color: #40d777;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: 5vh;
+}
+
+.linkwpp:hover {
+  transition: 0.1s ease;
+  box-shadow: 0 0 1rem #000;
+  border: 2px solid #000;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: -1;
+  width: 100%;
+  background-color: #252424;
+  padding: 0.7rem;
+  justify-content: center;
+  color: #ffa200;
+}
