@@ -142,11 +142,30 @@
   border-top-right-radius: 1rem;
 }
 
+.pizza > strong {
+  font-size: clamp(1.4rem,1vw,2.5rem);
+}
+
 .pizza p {
   text-align: left;
   margin-top: 1vh;
   margin-left: 1vw;
+  font-size: clamp(1rem,1vw,2rem);
 }
+
+@media screen and (max-width:768px) {
+  .itenscardapio {
+    display: block;
+  }
+
+  .pizza {
+    width: 100%;
+    min-width: 500px;
+    margin-bottom: 2rem;
+  }  
+
+}
+
 
 /* parte do sobre nós */
 
